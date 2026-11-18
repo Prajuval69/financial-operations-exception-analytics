@@ -1,5 +1,9 @@
 # Deployment and Local Runbook
 
+## Public project demo
+
+The public repository is https://github.com/Prajuval69/financial-operations-exception-analytics. GitHub Pages hosts a read-only executive report at https://prajuval69.github.io/financial-operations-exception-analytics/. Its source is `docs/index.html`, using the checked-in synthetic report with embedded interactive charts and links to source/Excel. Pages publishes main's `/docs` folder without Jekyll. This static demonstration does not expose the SQLite database, editable workflows, Streamlit server or FastAPI endpoints. Run those locally or on a Python-capable host.
+
 ## Preferred local workflow
 
 1. Create virtual environment.

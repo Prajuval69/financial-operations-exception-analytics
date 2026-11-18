@@ -2,6 +2,10 @@
 
 A complete local portfolio application turning synthetic operational records into validated data, prioritized exceptions, operational KPIs, owned remediation, and management reports.
 
+**[Live executive report demo](https://prajuval69.github.io/financial-operations-exception-analytics/)** · [Public source repository](https://github.com/Prajuval69/financial-operations-exception-analytics)
+
+The live site is a read-only synthetic-data report with interactive charts and an Excel download. The complete Streamlit/FastAPI application, including editable workflows, runs locally using the instructions below. GitHub Pages serves `docs/index.html`; it does not run the Python backend.
+
 **All data is synthetic.** SLA, thresholds, quality weights and risk scales are project methodology, not institutional production policies. No API keys, paid services, proprietary datasets, Power BI Desktop, or runtime internet connection are required.
 
 ```text

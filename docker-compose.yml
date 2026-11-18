@@ -1,0 +1,37 @@
+services:
+  seed:
+    build: .
+    command: ["python", "scripts/ensure_demo.py"]
+    environment: &environment
+      FINOPS_DATABASE_URL: sqlite:////workspace/data/finops.db
+      FINOPS_OUTPUT_DIR: /workspace/reports
+    volumes: &volumes
+      - finops-data:/workspace/data
+      - finops-reports:/workspace/reports
+  api:
+    build: .
+    environment: *environment
+    volumes: *volumes
+    depends_on:
+      seed:
+        condition: service_completed_successfully
+    ports:
+      - "127.0.0.1:8000:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=5)"]
+      interval: 15s
+      timeout: 6s
+      retries: 5
+  dashboard:
+    build: .
+    command: ["streamlit", "run", "dashboard/app.py", "--server.address=0.0.0.0", "--server.port=8501"]
+    environment: *environment
+    volumes: *volumes
+    depends_on:
+      seed:
+        condition: service_completed_successfully
+    ports:
+      - "127.0.0.1:8501:8501"
+volumes:
+  finops-data:
+  finops-reports:

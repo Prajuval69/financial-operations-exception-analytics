@@ -1,0 +1,602 @@
+[
+  {
+    "row_number": 9,
+    "defect": "missing_id",
+    "expected_rule": "DQ001"
+  },
+  {
+    "row_number": 10,
+    "defect": "missing_account",
+    "expected_rule": "DQ002"
+  },
+  {
+    "row_number": 26,
+    "defect": "missing_date",
+    "expected_rule": "DQ003"
+  },
+  {
+    "row_number": 29,
+    "defect": "missing_amount",
+    "expected_rule": "DQ004"
+  },
+  {
+    "row_number": 34,
+    "defect": "missing_currency",
+    "expected_rule": "DQ005"
+  },
+  {
+    "row_number": 42,
+    "defect": "missing_unit",
+    "expected_rule": "DQ006"
+  },
+  {
+    "row_number": 48,
+    "defect": "nonnumeric",
+    "expected_rule": "DQ010"
+  },
+  {
+    "row_number": 53,
+    "defect": "negative",
+    "expected_rule": "DQ011"
+  },
+  {
+    "row_number": 63,
+    "defect": "currency",
+    "expected_rule": "DQ012"
+  },
+  {
+    "row_number": 64,
+    "defect": "type",
+    "expected_rule": "DQ013"
+  },
+  {
+    "row_number": 67,
+    "defect": "status",
+    "expected_rule": "DQ014"
+  },
+  {
+    "row_number": 78,
+    "defect": "priority",
+    "expected_rule": "DQ015"
+  },
+  {
+    "row_number": 104,
+    "defect": "unit",
+    "expected_rule": "DQ016"
+  },
+  {
+    "row_number": 107,
+    "defect": "chronology",
+    "expected_rule": "DQ020"
+  },
+  {
+    "row_number": 109,
+    "defect": "duplicate",
+    "expected_rule": "DQ030"
+  },
+  {
+    "row_number": 119,
+    "defect": "late",
+    "expected_rule": "DQ041"
+  },
+  {
+    "row_number": 127,
+    "defect": "account",
+    "expected_rule": "DQ050"
+  },
+  {
+    "row_number": 140,
+    "defect": "team",
+    "expected_rule": "DQ051"
+  },
+  {
+    "row_number": 143,
+    "defect": "source",
+    "expected_rule": "DQ052"
+  },
+  {
+    "row_number": 150,
+    "defect": "outlier",
+    "expected_rule": "DQ060"
+  },
+  {
+    "row_number": 151,
+    "defect": "invalid_date",
+    "expected_rule": "DQ017"
+  },
+  {
+    "row_number": 159,
+    "defect": "invalid_processing",
+    "expected_rule": "DQ018"
+  },
+  {
+    "row_number": 165,
+    "defect": "missing_processing",
+    "expected_rule": "DQ019"
+  },
+  {
+    "row_number": 184,
+    "defect": "missing_id",
+    "expected_rule": "DQ001"
+  },
+  {
+    "row_number": 185,
+    "defect": "missing_account",
+    "expected_rule": "DQ002"
+  },
+  {
+    "row_number": 231,
+    "defect": "missing_date",
+    "expected_rule": "DQ003"
+  },
+  {
+    "row_number": 247,
+    "defect": "missing_amount",
+    "expected_rule": "DQ004"
+  },
+  {
+    "row_number": 256,
+    "defect": "missing_currency",
+    "expected_rule": "DQ005"
+  },
+  {
+    "row_number": 285,
+    "defect": "missing_unit",
+    "expected_rule": "DQ006"
+  },
+  {
+    "row_number": 307,
+    "defect": "nonnumeric",
+    "expected_rule": "DQ010"
+  },
+  {
+    "row_number": 312,
+    "defect": "negative",
+    "expected_rule": "DQ011"
+  },
+  {
+    "row_number": 324,
+    "defect": "currency",
+    "expected_rule": "DQ012"
+  },
+  {
+    "row_number": 327,
+    "defect": "type",
+    "expected_rule": "DQ013"
+  },
+  {
+    "row_number": 332,
+    "defect": "status",
+    "expected_rule": "DQ014"
+  },
+  {
+    "row_number": 342,
+    "defect": "priority",
+    "expected_rule": "DQ015"
+  },
+  {
+    "row_number": 345,
+    "defect": "unit",
+    "expected_rule": "DQ016"
+  },
+  {
+    "row_number": 355,
+    "defect": "chronology",
+    "expected_rule": "DQ020"
+  },
+  {
+    "row_number": 357,
+    "defect": "duplicate",
+    "expected_rule": "DQ030"
+  },
+  {
+    "row_number": 360,
+    "defect": "late",
+    "expected_rule": "DQ041"
+  },
+  {
+    "row_number": 368,
+    "defect": "account",
+    "expected_rule": "DQ050"
+  },
+  {
+    "row_number": 383,
+    "defect": "team",
+    "expected_rule": "DQ051"
+  },
+  {
+    "row_number": 384,
+    "defect": "source",
+    "expected_rule": "DQ052"
+  },
+  {
+    "row_number": 393,
+    "defect": "outlier",
+    "expected_rule": "DQ060"
+  },
+  {
+    "row_number": 394,
+    "defect": "invalid_date",
+    "expected_rule": "DQ017"
+  },
+  {
+    "row_number": 407,
+    "defect": "invalid_processing",
+    "expected_rule": "DQ018"
+  },
+  {
+    "row_number": 416,
+    "defect": "missing_processing",
+    "expected_rule": "DQ019"
+  },
+  {
+    "row_number": 426,
+    "defect": "missing_id",
+    "expected_rule": "DQ001"
+  },
+  {
+    "row_number": 436,
+    "defect": "missing_account",
+    "expected_rule": "DQ002"
+  },
+  {
+    "row_number": 451,
+    "defect": "missing_date",
+    "expected_rule": "DQ003"
+  },
+  {
+    "row_number": 452,
+    "defect": "missing_amount",
+    "expected_rule": "DQ004"
+  },
+  {
+    "row_number": 457,
+    "defect": "missing_currency",
+    "expected_rule": "DQ005"
+  },
+  {
+    "row_number": 459,
+    "defect": "missing_unit",
+    "expected_rule": "DQ006"
+  },
+  {
+    "row_number": 460,
+    "defect": "nonnumeric",
+    "expected_rule": "DQ010"
+  },
+  {
+    "row_number": 464,
+    "defect": "negative",
+    "expected_rule": "DQ011"
+  },
+  {
+    "row_number": 469,
+    "defect": "currency",
+    "expected_rule": "DQ012"
+  },
+  {
+    "row_number": 472,
+    "defect": "type",
+    "expected_rule": "DQ013"
+  },
+  {
+    "row_number": 493,
+    "defect": "status",
+    "expected_rule": "DQ014"
+  },
+  {
+    "row_number": 494,
+    "defect": "priority",
+    "expected_rule": "DQ015"
+  },
+  {
+    "row_number": 506,
+    "defect": "unit",
+    "expected_rule": "DQ016"
+  },
+  {
+    "row_number": 507,
+    "defect": "chronology",
+    "expected_rule": "DQ020"
+  },
+  {
+    "row_number": 527,
+    "defect": "duplicate",
+    "expected_rule": "DQ030"
+  },
+  {
+    "row_number": 546,
+    "defect": "late",
+    "expected_rule": "DQ041"
+  },
+  {
+    "row_number": 557,
+    "defect": "account",
+    "expected_rule": "DQ050"
+  },
+  {
+    "row_number": 558,
+    "defect": "team",
+    "expected_rule": "DQ051"
+  },
+  {
+    "row_number": 566,
+    "defect": "source",
+    "expected_rule": "DQ052"
+  },
+  {
+    "row_number": 574,
+    "defect": "outlier",
+    "expected_rule": "DQ060"
+  },
+  {
+    "row_number": 577,
+    "defect": "invalid_date",
+    "expected_rule": "DQ017"
+  },
+  {
+    "row_number": 593,
+    "defect": "invalid_processing",
+    "expected_rule": "DQ018"
+  },
+  {
+    "row_number": 615,
+    "defect": "missing_processing",
+    "expected_rule": "DQ019"
+  },
+  {
+    "row_number": 622,
+    "defect": "missing_id",
+    "expected_rule": "DQ001"
+  },
+  {
+    "row_number": 625,
+    "defect": "missing_account",
+    "expected_rule": "DQ002"
+  },
+  {
+    "row_number": 632,
+    "defect": "missing_date",
+    "expected_rule": "DQ003"
+  },
+  {
+    "row_number": 635,
+    "defect": "missing_amount",
+    "expected_rule": "DQ004"
+  },
+  {
+    "row_number": 666,
+    "defect": "missing_currency",
+    "expected_rule": "DQ005"
+  },
+  {
+    "row_number": 668,
+    "defect": "missing_unit",
+    "expected_rule": "DQ006"
+  },
+  {
+    "row_number": 684,
+    "defect": "nonnumeric",
+    "expected_rule": "DQ010"
+  },
+  {
+    "row_number": 687,
+    "defect": "negative",
+    "expected_rule": "DQ011"
+  },
+  {
+    "row_number": 692,
+    "defect": "currency",
+    "expected_rule": "DQ012"
+  },
+  {
+    "row_number": 695,
+    "defect": "type",
+    "expected_rule": "DQ013"
+  },
+  {
+    "row_number": 700,
+    "defect": "status",
+    "expected_rule": "DQ014"
+  },
+  {
+    "row_number": 704,
+    "defect": "priority",
+    "expected_rule": "DQ015"
+  },
+  {
+    "row_number": 708,
+    "defect": "unit",
+    "expected_rule": "DQ016"
+  },
+  {
+    "row_number": 714,
+    "defect": "chronology",
+    "expected_rule": "DQ020"
+  },
+  {
+    "row_number": 721,
+    "defect": "duplicate",
+    "expected_rule": "DQ030"
+  },
+  {
+    "row_number": 725,
+    "defect": "late",
+    "expected_rule": "DQ041"
+  },
+  {
+    "row_number": 735,
+    "defect": "account",
+    "expected_rule": "DQ050"
+  },
+  {
+    "row_number": 736,
+    "defect": "team",
+    "expected_rule": "DQ051"
+  },
+  {
+    "row_number": 741,
+    "defect": "source",
+    "expected_rule": "DQ052"
+  },
+  {
+    "row_number": 745,
+    "defect": "outlier",
+    "expected_rule": "DQ060"
+  },
+  {
+    "row_number": 764,
+    "defect": "invalid_date",
+    "expected_rule": "DQ017"
+  },
+  {
+    "row_number": 765,
+    "defect": "invalid_processing",
+    "expected_rule": "DQ018"
+  },
+  {
+    "row_number": 773,
+    "defect": "missing_processing",
+    "expected_rule": "DQ019"
+  },
+  {
+    "row_number": 777,
+    "defect": "missing_id",
+    "expected_rule": "DQ001"
+  },
+  {
+    "row_number": 792,
+    "defect": "missing_account",
+    "expected_rule": "DQ002"
+  },
+  {
+    "row_number": 793,
+    "defect": "missing_date",
+    "expected_rule": "DQ003"
+  },
+  {
+    "row_number": 815,
+    "defect": "missing_amount",
+    "expected_rule": "DQ004"
+  },
+  {
+    "row_number": 817,
+    "defect": "missing_currency",
+    "expected_rule": "DQ005"
+  },
+  {
+    "row_number": 818,
+    "defect": "missing_unit",
+    "expected_rule": "DQ006"
+  },
+  {
+    "row_number": 824,
+    "defect": "nonnumeric",
+    "expected_rule": "DQ010"
+  },
+  {
+    "row_number": 848,
+    "defect": "negative",
+    "expected_rule": "DQ011"
+  },
+  {
+    "row_number": 855,
+    "defect": "currency",
+    "expected_rule": "DQ012"
+  },
+  {
+    "row_number": 858,
+    "defect": "type",
+    "expected_rule": "DQ013"
+  },
+  {
+    "row_number": 869,
+    "defect": "status",
+    "expected_rule": "DQ014"
+  },
+  {
+    "row_number": 870,
+    "defect": "priority",
+    "expected_rule": "DQ015"
+  },
+  {
+    "row_number": 880,
+    "defect": "unit",
+    "expected_rule": "DQ016"
+  },
+  {
+    "row_number": 890,
+    "defect": "chronology",
+    "expected_rule": "DQ020"
+  },
+  {
+    "row_number": 895,
+    "defect": "duplicate",
+    "expected_rule": "DQ030"
+  },
+  {
+    "row_number": 901,
+    "defect": "late",
+    "expected_rule": "DQ041"
+  },
+  {
+    "row_number": 907,
+    "defect": "account",
+    "expected_rule": "DQ050"
+  },
+  {
+    "row_number": 924,
+    "defect": "team",
+    "expected_rule": "DQ051"
+  },
+  {
+    "row_number": 930,
+    "defect": "source",
+    "expected_rule": "DQ052"
+  },
+  {
+    "row_number": 938,
+    "defect": "outlier",
+    "expected_rule": "DQ060"
+  },
+  {
+    "row_number": 942,
+    "defect": "invalid_date",
+    "expected_rule": "DQ017"
+  },
+  {
+    "row_number": 945,
+    "defect": "invalid_processing",
+    "expected_rule": "DQ018"
+  },
+  {
+    "row_number": 946,
+    "defect": "missing_processing",
+    "expected_rule": "DQ019"
+  },
+  {
+    "row_number": 948,
+    "defect": "missing_id",
+    "expected_rule": "DQ001"
+  },
+  {
+    "row_number": 958,
+    "defect": "missing_account",
+    "expected_rule": "DQ002"
+  },
+  {
+    "row_number": 971,
+    "defect": "missing_date",
+    "expected_rule": "DQ003"
+  },
+  {
+    "row_number": 985,
+    "defect": "missing_amount",
+    "expected_rule": "DQ004"
+  },
+  {
+    "row_number": 992,
+    "defect": "missing_currency",
+    "expected_rule": "DQ005"
+  }
+]

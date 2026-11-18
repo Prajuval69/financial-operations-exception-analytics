@@ -1,0 +1,35 @@
+{
+  "checks": [
+    {
+      "command": "uv sync --frozen --extra dev",
+      "exit_code": 0,
+      "seconds": 2.8,
+      "output_tail": "Using CPython 3.12.4 interpreter at: C:\\Users\\praju\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\nCreating virtual environment at: .venv\n   Building financial-ops-analytics @ file:///C:/Users/praju/AppData/Local/Temp/finops-clean-ytba7evi/checkout\n      Built financial-ops-analytics @ file:///C:/Users/praju/AppData/Local/Temp/finops-clean-ytba7evi/checkout\nPrepared 1 package in 1.61s\nInstalled 60 packages in 1.07s\n + altair==6.3.0\n + annotated-doc==0.0.5\n + annotated-types==0.8.0\n + anyio==4.15.1\n + attrs==26.1.0\n + certifi==2026.7.22\n + charset-normalizer==3.5.2\n + click==8.5.0\n + colorama==0.4.6\n + coverage==7.16.2\n + et-xmlfile==2.0.0\n + fastapi==0.142.2\n + financial-ops-analytics==1.0.0 (from file:///C:/Users/praju/AppData/Local/Temp/finops-clean-ytba7evi/checkout)\n + h11==0.16.0\n + httpcore==1.0.9\n + httptools==0.8.0\n + httpx==0.28.1\n + idna==3.20\n + iniconfig==2.3.0\n + itsdangerous==2.2.0\n + jinja2==3.1.6\n + jsonschema==4.26.0\n + jsonschema-specifications==2025.9.1\n + markupsafe==3.0.4\n + narwhals==2.26.0\n + numpy==2.5.3\n + openpyxl==3.1.5\n + opentelemetry-api==1.45.0\n + packaging==26.3\n + pandas==2.3.3\n + pillow==12.3.0\n + plotly==6.9.0\n + pluggy==1.6.0\n + protobuf==7.36.2\n + pyarrow==25.0.1\n + pydantic==2.13.5\n + pydantic-core==2.46.5\n + pydeck==0.9.3\n + pygments==2.21.0\n + pytest==8.4.2\n + pytest-cov==6.3.0\n + python-dateutil==2.9.0.post0\n + python-multipart==0.0.32\n + pytz==2026.5\n + referencing==0.37.0\n + requests==2.34.2\n + rpds-py==2026.9.1\n + ruff==0.16.10\n + six==1.17.0\n + sqlalchemy==2.1.3\n + starlette==0.52.1\n + streamlit==1.65.0\n + toml==0.10.2\n + typing-extensions==4.16.0\n + typing-inspection==0.4.4\n + tzdata==2026.5\n + urllib3==2.8.0\n + uvicorn==0.54.0\n + watchdog==6.0.0\n + websockets==17.2\n"
+    },
+    {
+      "command": "uv run --frozen --extra dev ruff check .",
+      "exit_code": 0,
+      "seconds": 0.3,
+      "output_tail": "All checks passed!\n"
+    },
+    {
+      "command": "uv run --frozen --extra dev ruff format --check .",
+      "exit_code": 0,
+      "seconds": 0.1,
+      "output_tail": "71 files already formatted\n"
+    },
+    {
+      "command": "uv run --frozen --extra dev pytest -q --tb=short",
+      "exit_code": 0,
+      "seconds": 27.59,
+      "output_tail": "........................................................................ [ 80%]\n.................                                                        [100%]\n============================== warnings summary ===============================\n.venv\\Lib\\site-packages\\starlette\\testclient.py:45\n  C:\\Users\\praju\\AppData\\Local\\Temp\\finops-clean-ytba7evi\\checkout\\.venv\\Lib\\site-packages\\starlette\\testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n89 passed, 1 warning in 22.19s\n"
+    },
+    {
+      "command": "uv run --frozen --extra dev python -m app.cli demo --rows 1000 --accounts 100",
+      "exit_code": 0,
+      "seconds": 3.95,
+      "output_tail": "{\n  \"transactions\": 1000,\n  \"accounts\": 100,\n  \"injected_defects\": 120,\n  \"seed\": 42,\n  \"validation\": {\n    \"transaction_count\": 1000,\n    \"new_exceptions\": 129,\n    \"failed_checks\": 129,\n    \"rule_counts\": {\n      \"DQ001\": 6,\n      \"DQ002\": 6,\n      \"DQ003\": 6,\n      \"DQ004\": 6,\n      \"DQ005\": 6,\n      \"DQ006\": 5,\n      \"DQ010\": 5,\n      \"DQ011\": 5,\n      \"DQ012\": 5,\n      \"DQ013\": 5,\n      \"DQ014\": 5,\n      \"DQ015\": 5,\n      \"DQ016\": 5,\n      \"DQ017\": 5,\n      \"DQ018\": 5,\n      \"DQ019\": 5,\n      \"DQ020\": 5,\n      \"DQ030\": 5,\n      \"DQ040\": 5,\n      \"DQ041\": 9,\n      \"DQ050\": 5,\n      \"DQ051\": 5,\n      \"DQ052\": 5,\n      \"DQ060\": 5\n    },\n    \"as_of\": \"2026-09-30T18:00:00\"\n  },\n  \"workflow\": {\n    \"actions\": 80,\n    \"risks\": 30\n  },\n  \"reports\": [\n    \"C:\\\\Users\\\\praju\\\\AppData\\\\Local\\\\Temp\\\\finops-clean-ytba7evi\\\\checkout\\\\reports\\\\finops-20261006-112256-1c21aea6.xlsx\",\n    \"C:\\\\Users\\\\praju\\\\AppData\\\\Local\\\\Temp\\\\finops-clean-ytba7evi\\\\checkout\\\\reports\\\\finops-20261006-112257-7858de0e.html\"\n  ]\n}\n{\"timestamp\": \"2026-10-06T11:22:54.925063+00:00\", \"level\": \"INFO\", \"logger\": \"app.services.ingestion\", \"message\": \"ingested rows=1000 processing_events=2565 source=synthetic-generator\"}\n{\"timestamp\": \"2026-10-06T11:22:54.985082+00:00\", \"level\": \"INFO\", \"logger\": \"app.services.validation\", \"message\": \"validation completed rows=1000 failures=129 new=129\"}\n{\"timestamp\": \"2026-10-06T11:22:55.122790+00:00\", \"level\": \"INFO\", \"logger\": \"app.services.validation\", \"message\": \"validation completed rows=1000 failures=129 new=0\"}\n{\"timestamp\": \"2026-10-06T11:22:56.883349+00:00\", \"level\": \"INFO\", \"logger\": \"app.reports.service\", \"message\": \"excel report generated filename=finops-20261006-112256-1c21aea6.xlsx\"}\n{\"timestamp\": \"2026-10-06T11:22:57.216952+00:00\", \"level\": \"INFO\", \"logger\": \"app.reports.service\", \"message\": \"executive report generated filename=finops-20261006-112257-7858de0e.html\"}\n"
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,240 @@
+{
+  "values": {
+    "KPI001": 50000,
+    "KPI002": 43432,
+    "KPI003": 6568,
+    "KPI010": 0.99478,
+    "KPI011": 0.9374,
+    "KPI012": 0.00522,
+    "KPI013": 0.12,
+    "KPI014": 0.974614,
+    "KPI020": 10.788318449327292,
+    "KPI021": 8.155,
+    "KPI022": 0.993820144906947,
+    "KPI023": 0.048996131884324924,
+    "KPI030": 5182,
+    "KPI031": 209,
+    "KPI032": {
+      "0\u20132 days": 897,
+      "2\u20137 days": 723,
+      "7\u201314 days": 1389,
+      "14\u201330 days": 1444,
+      ">30 days": 729
+    },
+    "KPI033": 10.382221364883401,
+    "KPI040": 60,
+    "KPI041": 22,
+    "KPI042": 0.25,
+    "KPI050": 30,
+    "KPI051": 12,
+    "KPI052": 300
+  },
+  "dimensions": {
+    "completeness": 0.99478,
+    "validity": 0.9374,
+    "consistency": 0.98958,
+    "timeliness": 0.98522
+  },
+  "metrics": [
+    {
+      "code": "KPI001",
+      "name": "Total Transactions",
+      "unit": "count",
+      "definition": "Count of transaction rows including duplicates and defective rows.",
+      "value": 50000
+    },
+    {
+      "code": "KPI002",
+      "name": "Processed Transactions",
+      "unit": "count",
+      "definition": "Count of rows with status Completed.",
+      "value": 43432
+    },
+    {
+      "code": "KPI003",
+      "name": "Open Backlog",
+      "unit": "count",
+      "definition": "Count of rows whose status is not Completed, including unknown statuses.",
+      "value": 6568
+    },
+    {
+      "code": "KPI010",
+      "name": "Completeness Rate",
+      "unit": "rate",
+      "definition": "Present mandatory observations / (6 \u00d7 transaction rows).",
+      "value": 0.99478
+    },
+    {
+      "code": "KPI011",
+      "name": "Validity Rate",
+      "unit": "rate",
+      "definition": "Rows passing enabled Validity and Referential Integrity rules / transaction rows.",
+      "value": 0.9374
+    },
+    {
+      "code": "KPI012",
+      "name": "Duplicate Rate",
+      "unit": "rate",
+      "definition": "Duplicate IDs beyond the first nonblank occurrence / transaction rows.",
+      "value": 0.00522
+    },
+    {
+      "code": "KPI013",
+      "name": "Exception Rate",
+      "unit": "rate",
+      "definition": "Distinct transaction rows with persisted exceptions, including resolved history / transaction rows.",
+      "value": 0.12
+    },
+    {
+      "code": "KPI014",
+      "name": "Overall Data Quality Score",
+      "unit": "rate",
+      "definition": "Configured weighted sum of completeness, validity, consistency, and timeliness rates; project methodology.",
+      "value": 0.974614
+    },
+    {
+      "code": "KPI020",
+      "name": "Average Processing TAT",
+      "unit": "hours",
+      "definition": "Mean nonnegative valid duration for Completed rows.",
+      "value": 10.788318449327292
+    },
+    {
+      "code": "KPI021",
+      "name": "Median Processing TAT",
+      "unit": "hours",
+      "definition": "Median nonnegative valid duration for Completed rows.",
+      "value": 8.155
+    },
+    {
+      "code": "KPI022",
+      "name": "SLA Compliance",
+      "unit": "rate",
+      "definition": "Completed rows with valid nonnegative duration \u2264 configured SLA / eligible completed rows.",
+      "value": 0.993820144906947
+    },
+    {
+      "code": "KPI023",
+      "name": "Rework Rate",
+      "unit": "rate",
+      "definition": "Completed rows with rework true / Completed rows.",
+      "value": 0.048996131884324924
+    },
+    {
+      "code": "KPI030",
+      "name": "Open Exceptions",
+      "unit": "count",
+      "definition": "Exceptions with status other than Resolved or Closed.",
+      "value": 5182
+    },
+    {
+      "code": "KPI031",
+      "name": "Critical Exceptions",
+      "unit": "count",
+      "definition": "Critical unresolved exceptions.",
+      "value": 209
+    },
+    {
+      "code": "KPI032",
+      "name": "Exception Aging",
+      "unit": "buckets",
+      "definition": "Unresolved exceptions grouped by elapsed days since detection at simulation as-of.",
+      "value": {
+        "0\u20132 days": 897,
+        "2\u20137 days": 723,
+        "7\u201314 days": 1389,
+        "14\u201330 days": 1444,
+        ">30 days": 729
+      }
+    },
+    {
+      "code": "KPI033",
+      "name": "Average Resolution Time",
+      "unit": "hours",
+      "definition": "Mean valid nonnegative hours from detection to resolution for Resolved/Closed exceptions.",
+      "value": 10.382221364883401
+    },
+    {
+      "code": "KPI040",
+      "name": "Open Actions",
+      "unit": "count",
+      "definition": "Actions other than Completed or Cancelled.",
+      "value": 60
+    },
+    {
+      "code": "KPI041",
+      "name": "Overdue Actions",
+      "unit": "count",
+      "definition": "Open actions with valid due timestamp earlier than simulation as-of.",
+      "value": 22
+    },
+    {
+      "code": "KPI042",
+      "name": "Action Completion Rate",
+      "unit": "rate",
+      "definition": "Completed actions / all actions, including cancelled actions.",
+      "value": 0.25
+    },
+    {
+      "code": "KPI050",
+      "name": "Open Risks",
+      "unit": "count",
+      "definition": "Risks whose status is not Closed.",
+      "value": 30
+    },
+    {
+      "code": "KPI051",
+      "name": "High/Critical Risk Count",
+      "unit": "count",
+      "definition": "Open risks with probability \u00d7 impact \u2265 configured high-risk threshold.",
+      "value": 12
+    },
+    {
+      "code": "KPI052",
+      "name": "Risk Exposure",
+      "unit": "score",
+      "definition": "Sum of probability \u00d7 impact over open risks; ordinal score, not monetary exposure.",
+      "value": 300
+    }
+  ],
+  "context": {
+    "as_of": "2026-09-30T18:00:00",
+    "refresh_timestamp": "2026-10-06T11:01:42",
+    "source": "synthetic-generator",
+    "filters": {
+      "business_unit": null,
+      "team": null,
+      "status": null,
+      "source_system": null,
+      "date_from": null,
+      "date_to": null
+    },
+    "period_from": "2026-07-02",
+    "period_to": "2026-09-30",
+    "eligible_completed": 42234,
+    "excluded_completed": 1198,
+    "policy": {
+      "database_url": "sqlite:///data/finops.db",
+      "output_dir": "reports",
+      "sla_hours": 48.0,
+      "date_tolerance_minutes": 0.0,
+      "high_value_threshold": 1000000.0,
+      "weights": {
+        "completeness": 0.3,
+        "validity": 0.3,
+        "consistency": 0.2,
+        "timeliness": 0.2
+      },
+      "aging_days": [
+        2,
+        7,
+        14,
+        30
+      ],
+      "disabled_rules": [],
+      "severity_overrides": {},
+      "priority_age_days": 7,
+      "high_risk_score": 12
+    }
+  }
+}

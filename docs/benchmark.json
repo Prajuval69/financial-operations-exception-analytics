@@ -1,0 +1,11 @@
+{
+  "rows": 100000,
+  "python": "3.12.4",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "seed": 42,
+  "simulation_as_of": "2026-09-30T18:00:00",
+  "generation_ingestion_seconds": 10.145,
+  "validation_seconds": 2.962,
+  "exceptions": 12963,
+  "analytics_seconds": 7.398
+}

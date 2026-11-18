@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "financial-ops-analytics"
+version = "1.0.0"
+description = "Local synthetic financial operations quality and exception analytics"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.121,<1", "starlette>=0.49,<1", "uvicorn>=0.30,<1", "sqlalchemy>=2.0,<3",
+  "pydantic>=2.10,<3", "pandas>=2.2,<3", "numpy>=1.26,<3",
+  "streamlit>=1.40,<2", "plotly>=5.24,<7", "openpyxl>=3.1,<4"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.3,<9", "pytest-cov>=6,<7", "httpx>=0.28,<1", "ruff>=0.8,<1"]
+
+[project.scripts]
+finops = "app.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["app*", "dashboard*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]
+ignore = ["E501", "B008"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["app", "dashboard", "tests"]

@@ -1,0 +1,11 @@
+{
+  "sla_hours": 48,
+  "date_tolerance_minutes": 0,
+  "high_value_threshold": 1000000,
+  "weights": {"completeness": 0.3, "validity": 0.3, "consistency": 0.2, "timeliness": 0.2},
+  "aging_days": [2, 7, 14, 30],
+  "disabled_rules": [],
+  "severity_overrides": {},
+  "priority_age_days": 7,
+  "high_risk_score": 12
+}

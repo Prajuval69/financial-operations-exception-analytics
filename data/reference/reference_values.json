@@ -1,0 +1,78 @@
+{
+  "currency": {
+    "USD": "USD",
+    "EUR": "EUR",
+    "GBP": "GBP",
+    "INR": "INR",
+    "JPY": "JPY",
+    "SGD": "SGD"
+  },
+  "country": {
+    "US": "US",
+    "GB": "GB",
+    "IN": "IN",
+    "SG": "SG",
+    "DE": "DE",
+    "JP": "JP"
+  },
+  "transaction_type": {
+    "Payment": "Payment",
+    "Settlement": "Settlement",
+    "Transfer": "Transfer",
+    "Reconciliation": "Reconciliation"
+  },
+  "status": {
+    "Completed": "Completed",
+    "Pending": "Pending",
+    "In Progress": "In Progress",
+    "Failed": "Failed"
+  },
+  "priority": {
+    "P1": "P1",
+    "P2": "P2",
+    "P3": "P3",
+    "P4": "P4"
+  },
+  "business_unit_id": {
+    "BU01": "Payments",
+    "BU02": "Custody",
+    "BU03": "Fund Services",
+    "BU04": "Markets",
+    "BU05": "Treasury",
+    "BU06": "Reconciliation",
+    "BU07": "Client Operations",
+    "BU08": "Corporate Services",
+    "BU09": "Transfer Agency",
+    "BU10": "Technology Operations"
+  },
+  "team_id": {
+    "TEAM01": "Settlement Control",
+    "TEAM02": "Payments Processing",
+    "TEAM03": "Reconciliation Desk",
+    "TEAM04": "Data Operations",
+    "TEAM05": "Client Support",
+    "TEAM06": "Exception Management",
+    "TEAM07": "Reference Data",
+    "TEAM08": "Platform Support"
+  },
+  "source_system_id": {
+    "SRC01": "Payment Gateway",
+    "SRC02": "Settlement Hub",
+    "SRC03": "Ledger Simulator",
+    "SRC04": "Client Portal",
+    "SRC05": "Batch Import",
+    "SRC06": "Reference Feed"
+  },
+  "exception_category": {
+    "Completeness": "Completeness",
+    "Validity": "Validity",
+    "Consistency": "Consistency",
+    "Duplicate": "Duplicate",
+    "Referential Integrity": "Referential Integrity",
+    "Timeliness": "Timeliness",
+    "Outlier": "Outlier",
+    "Processing": "Processing",
+    "Reconciliation": "Reconciliation",
+    "Governance": "Governance"
+  }
+}
